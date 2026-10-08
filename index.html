@@ -1,39 +1,112 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Frog Mods</title>
+  <title>UNKNOWN SERVER</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
-      display: grid;
-      place-items: center;
-      background: #101b16;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
       color: white;
-      font-family: Arial, sans-serif;
       text-align: center;
+      background: linear-gradient(
+        135deg,
+        #050505 0%,
+        #252525 45%,
+        #484848 70%,
+        #111111 100%
+      );
+      background-attachment: fixed;
     }
-    main { padding: 24px; }
-    h1 { color: #65f29a; font-size: 42px; }
-    a {
-      display: inline-block;
-      padding: 12px 20px;
-      background: #65f29a;
-      color: #102016;
-      border-radius: 12px;
+
+    .container {
+      padding: 24px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 8vw, 64px);
+      font-weight: 800;
+      letter-spacing: 5px;
+      text-shadow: 0 4px 20px #00000080;
+    }
+
+    p {
+      margin: 18px 0 28px;
+      color: #c5c5c5;
+      font-size: 13px;
+      letter-spacing: 1px;
+      line-height: 1.7;
+    }
+
+    .discord-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 24px;
+      border: 1px solid #777;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #444, #222);
+      color: white;
       text-decoration: none;
+      font-size: 15px;
       font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 5px 20px #00000050;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .discord-button:hover {
+      background: linear-gradient(135deg, #606060, #303030);
+      transform: translateY(-3px);
+    }
+
+    .discord-button:focus-visible {
+      outline: 2px solid white;
+      outline-offset: 4px;
+    }
+
+    .discord-icon {
+      width: 23px;
+      height: 23px;
+      fill: currentColor;
     }
   </style>
 </head>
+
 <body>
-  <main>
-    <h1>🐸 Frog Mods</h1>
-    <p>Your hub for mods, updates, and community events.</p>
-    <a href="https://discord.com/">Join the community</a>
+  <main class="container">
+    <h1>UNKNOWN SERVER</h1>
+
+    <p>
+      A server coming soon.<br>
+      No one knows what it will be about.
+    </p>
+
+    <a
+      class="discord-button"
+      href="https://discord.gg/SQRXJncbwg"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg class="discord-icon" viewBox="0 0 24 24"
+           role="img" aria-label="Discord">
+        <path d="M19.7 5.3A19 19 0 0 0 15 3.8l-.6 1.2a17.5 17.5 0 0 0-4.8 0L9 3.8a19 19 0 0 0-4.7 1.5C1.3 9.7.5 14 .9 18.2a19 19 0 0 0 5.8 3l1.2-2a12 12 0 0 1-1.9-.9l.5-.4a13.7 13.7 0 0 0 11 0l.5.4a12 12 0 0 1-1.9.9l1.2 2a19 19 0 0 0 5.8-3c.5-4.9-.8-9.2-3.4-12.9ZM8.8 15.4c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Zm6.4 0c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Z"/>
+      </svg>
+      JOIN DISCORD
+    </a>
   </main>
 </body>
 </html>
